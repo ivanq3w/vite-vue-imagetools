@@ -8,9 +8,9 @@ const iPumpkinUrl = computed(() => {
 </script>
 
 <template>
-  <img :src="iPumpkin" alt="" style="width: 400px;">
-  <div class="pumpkin" style="width: 400px; height: 400px;"></div>
-  <img src="./assets/pumpkin.jpg" alt="" style="width: 400px;">
+  <img class="cell" :src="iPumpkin" alt="" />
+  <div class="cell pumpkin" style="height: 270px;"></div>
+  <img class="cell" src="./assets/pumpkin.jpg?w=100&quality=1" alt="" >
 </template>
 
 <style>
@@ -18,6 +18,9 @@ const iPumpkinUrl = computed(() => {
   background: v-bind(iPumpkinUrl);
   background-size: 100%;
   background-repeat: no-repeat;
+}
+.cell {
+  width: 400px;
 }
 html, body {
   padding: 0;
@@ -31,5 +34,7 @@ html, body {
   color: #2c3e50;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 </style>
