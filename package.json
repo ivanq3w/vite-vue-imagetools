@@ -1,5 +1,5 @@
 {
-  "name": "vite-vue-typescript-starter",
+  "name": "vite-vue-imagetools",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -13,6 +13,7 @@
     "@vitejs/plugin-vue": "^1.9.4",
     "typescript": "^4.4.4",
     "vite": "^2.6.13",
+    "vite-imagetools": "^3.8.0",
     "vue-tsc": "^0.28.10"
   }
 }
